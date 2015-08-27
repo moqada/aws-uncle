@@ -1,0 +1,23 @@
+[{
+  "type": "ec2",
+  "exclude": {
+    "name": [
+      "*staging*"
+    ]
+  },
+  "filter": {
+    "name": "*web*",
+    "stateName": ["running"]
+  }
+}, {
+  "type": "rds",
+  "filter": {
+    "name": "demo-db"
+  }
+}, {
+  "type": "eb",
+  "exclude": {
+    "name": "*web*",
+    "cname": "*production*"
+  }
+}]
