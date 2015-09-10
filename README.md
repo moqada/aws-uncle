@@ -34,3 +34,11 @@ npm run publish
 ```
 
 Upload `build/aws-uncle.zip` to AWS Lambda.
+
+
+## TODO
+
+- [ ] Support EMR
+- [ ] Load configs from S3
+- [ ] Run standalone (CLI / crontab)
+- [ ] Add tests
