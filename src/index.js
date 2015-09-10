@@ -16,7 +16,7 @@ dotenv.load();
  */
 export function handler(event, context) {
   console.log('env: ', process.env);
-  const job = new Job(env('BUCKET'), env('JOBCTL_KEY_NAME'), {
+  const job = new Job(env('JOBCTL_BUCKET_NAME'), env('JOBCTL_KEY_NAME'), {
     execInterval: env('NOTIFY_INTERVAL')
   });
   job.execute(event, context, ctx => {
