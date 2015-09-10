@@ -26,7 +26,7 @@
   "scripts": {
     "build": "babel src --out-dir dist",
     "publish": "rm -rf {build,dist} && npm run build && cp -r dist build && babel-node script/deploy.js",
-    "test": "eslint src/",
+    "test": "eslint src script",
     "watch": "babel src --out-dir dist --watch"
   }
 }
