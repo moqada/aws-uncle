@@ -31,6 +31,46 @@ Put settings for filtering Unexpected servers
 cp configs.example.json configs.json
 ```
 
+Set following IAM policy for AWS Lambda.
+
+Replace `<AWS_UNCLE_BUCKET_NAME>` to your S3 bucket name.
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:describe*",
+                "elasticbeanstalk:describe*",
+                "rds:describe*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::<AWS_UCNLE_BUCKET_NAME>/*"
+            ]
+        }
+    ]
+}
+```
+
 
 ## Deploy
 
