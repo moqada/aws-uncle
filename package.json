@@ -1,7 +1,7 @@
 {
   "name": "aws-uncle",
   "description": "Useful uncle notifying unexpected servers in AWS",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "moqada <moqada@gmail.com>",
   "dependencies": {
     "aws-sdk": "^2.1.48",
