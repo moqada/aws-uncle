@@ -53,6 +53,7 @@ Replace `<AWS_UNCLE_BUCKET_NAME>` to your S3 bucket name.
             "Action": [
                 "ec2:describe*",
                 "elasticbeanstalk:describe*",
+                "elasticmapreduce:list*",
                 "rds:describe*"
             ],
             "Resource": "*"
