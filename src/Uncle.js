@@ -129,6 +129,25 @@ http://img.tiqav.com/1Mr.jpg`;
   }
 
   /**
+   * Check for EMR
+   *
+   * @param {Object} target Config object
+   * @return {Promise}
+   */
+  emr(target) {
+    return this.jungle.emr.getClusters(target.filter).then(instances => {
+      const names = this.exclude(instances, target.exclude, (i, key) => {
+        if (key === 'name') {
+          return i.Name;
+        } else if (key === 'stateName') {
+          return i.Status.State;
+        }
+      }).map(i => i.Name);
+      return {type: 'EMR', names};
+    });
+  }
+
+  /**
    * Check for RDS
    *
    * @param {Object} target Config object
