@@ -1,6 +1,4 @@
-extends: moqada
+extends: moqada/cli
 parser: babel-eslint
 rules:
-  no-console: 0
-  no-process-exit: 0
   camelcase: 1
