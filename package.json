@@ -25,7 +25,9 @@
   "private": true,
   "scripts": {
     "build": "babel src --out-dir dist",
-    "publish": "rm -rf {build,dist} && npm run build && cp -r dist build && babel-node script/deploy.js",
+    "deploy": "npm run build && cp -r dist build && babel-node script/deploy.js",
+    "prebuild": "rm -rf dist",
+    "predeploy": "rm -rf build",
     "test": "eslint src script",
     "watch": "babel src --out-dir dist --watch"
   }
