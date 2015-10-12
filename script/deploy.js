@@ -12,6 +12,9 @@ const ROOT_DIR = path.join(__dirname, '../');
 const BUILD_DIR = path.join(ROOT_DIR, 'build');
 
 
+/**
+ * Copy node_modules to build dir
+ */
 function copyModules() {
   const baseDir = path.join(BUILD_DIR, 'node_modules');
   const moduleDir = path.join(ROOT_DIR, 'node_modules');
@@ -23,6 +26,9 @@ function copyModules() {
   });
 }
 
+/**
+ * main process
+ */
 function main() {
   ['.env', 'configs.json'].forEach(name => {
     console.log(`copying... ${name}`);
