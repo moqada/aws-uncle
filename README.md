@@ -3,6 +3,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![DevDependency Status][daviddm-dev-image]][daviddm-dev-url]
+[![Version][version-image]][version-url]
 [![License][license-image]][license-url]
 
 Useful uncle notifying unexpected servers in AWS.
@@ -84,5 +85,7 @@ Upload `build/aws-uncle.zip` to AWS Lambda.
 [daviddm-image]: https://img.shields.io/david/moqada/aws-uncle.svg?style=flat-square
 [daviddm-dev-url]: https://david-dm.org/moqada/aws-uncle#info=devDependencies
 [daviddm-dev-image]: https://img.shields.io/david/dev/moqada/aws-uncle.svg?style=flat-square
+[version-url]: https://github.com/moqada/aws-uncle/releases
+[version-image]: https://img.shields.io/github/tag/moqada/aws-uncle.svg?style=flat-square
 [license-url]: https://github.com/moqada/aws-uncle/blob/master/LICENSE.md
 [license-image]: https://img.shields.io/github/license/moqada/aws-uncle.svg?style=flat-square
