@@ -19,7 +19,7 @@ npm install
 
 ## Configuration
 
-Put Environment variables (HipChat token, notify interval...)
+Put Environment variables (HipChat token...)
 
 ```
 cp .env.example .env
@@ -32,8 +32,6 @@ cp configs.example.json configs.json
 ```
 
 Set following IAM policy for AWS Lambda.
-
-Replace `<AWS_UNCLE_BUCKET_NAME>` to your S3 bucket name.
 
 ```json
 {
@@ -57,16 +55,6 @@ Replace `<AWS_UNCLE_BUCKET_NAME>` to your S3 bucket name.
                 "rds:describe*"
             ],
             "Resource": "*"
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "s3:GetObject",
-                "s3:PutObject"
-            ],
-            "Resource": [
-                "arn:aws:s3:::<AWS_UCNLE_BUCKET_NAME>/*"
-            ]
         }
     ]
 }
@@ -76,7 +64,7 @@ Replace `<AWS_UNCLE_BUCKET_NAME>` to your S3 bucket name.
 ## Deploy
 
 ```
-npm run publish
+npm run deploy
 ```
 
 Upload `build/aws-uncle.zip` to AWS Lambda.
