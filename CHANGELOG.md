@@ -1,3 +1,18 @@
+<a name="0.3.0"></a>
+# [0.3.0](//compare/v0.2.0...v0.3.0) (2015-10-14)
+
+
+### Features
+
+* **job:** Remove job process 4544f2a
+
+
+### BREAKING CHANGES
+
+* Remove job script
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](//compare/v0.1.0...v0.2.0) (2015-09-12)
 
