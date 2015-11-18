@@ -31,7 +31,7 @@
     "deploy": "npm run build && cp -r dist build && babel-node script/deploy.js",
     "prebuild": "rm -rf dist",
     "predeploy": "rm -rf build",
-    "test": "eslint src script",
+    "test": "eslint --cache src script",
     "watch": "babel src --out-dir dist --watch"
   }
 }
