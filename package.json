@@ -6,7 +6,7 @@
   "dependencies": {
     "aws-sdk": "^2.2.30",
     "babel-runtime": "^6.0.8",
-    "dotenv": "^1.2.0",
+    "dotenv": "^2.0.0",
     "hipchatter": "^0.2.0",
     "minimatch": "^3.0.0",
     "node-jungle": "^0.4.0"
