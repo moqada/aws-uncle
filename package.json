@@ -18,7 +18,7 @@
     "babel-preset-es2015": "^6.1.18",
     "del": "^2.0.2",
     "eslint": "^1.6.0",
-    "eslint-config-moqada": "^8.0.1",
+    "eslint-config-moqada": "^12.0.0",
     "fs-extra": "^0.26.0",
     "mkdirp": "^0.5.1",
     "zip-local": "^0.2.1"
