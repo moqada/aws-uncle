@@ -1,4 +1,6 @@
-extends: moqada/cli
+extends:
+  - moqada
+  - moqada/cli
 parser: babel-eslint
 rules:
   camelcase: 1
