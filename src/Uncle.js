@@ -106,6 +106,7 @@ http://img.tiqav.com/1Mr.jpg`;
         } else if (key === 'cname') {
           return i.CNAME;
         }
+        return undefined;
       }).map(i => i.EnvironmentName);
       return {type: 'EB', names};
     });
@@ -123,6 +124,7 @@ http://img.tiqav.com/1Mr.jpg`;
         if (key === 'name') {
           return utils.getTagValue(i.Tags, 'Name') || '';
         }
+        return undefined;
       }).map(i => utils.getTagValue(i.Tags, 'Name') || '');
       return {type: 'EC2', names};
     });
@@ -142,6 +144,7 @@ http://img.tiqav.com/1Mr.jpg`;
         } else if (key === 'stateName') {
           return i.Status.State;
         }
+        return undefined;
       }).map(i => i.Name);
       return {type: 'EMR', names};
     });
@@ -159,6 +162,7 @@ http://img.tiqav.com/1Mr.jpg`;
         if (key === 'name') {
           return i.DBInstanceIdentifier;
         }
+        return undefined;
       }).map(i => i.DBInstanceIdentifier);
       return {type: 'RDS', names};
     });
