@@ -1,3 +1,13 @@
+<a name="0.4.0"></a>
+# [0.4.0](//compare/v0.3.1...v0.4.0) (2016-03-22)
+
+
+### Features
+
+* **ec2:** Support some attributes of EC2 370f322
+
+
+
 <a name="0.3.1"></a>
 ## [0.3.1](//compare/v0.3.0...v0.3.1) (2015-11-18)
 
