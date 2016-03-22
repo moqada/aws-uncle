@@ -124,7 +124,7 @@ http://img.tiqav.com/1Mr.jpg`;
         if (key === 'name') {
           return utils.getTagValue(i.Tags, 'Name') || '';
         }
-        return undefined;
+        return i[key];
       }).map(i => utils.getTagValue(i.Tags, 'Name') || '');
       return {type: 'EC2', names};
     });
