@@ -4,3 +4,4 @@ extends:
 parser: babel-eslint
 rules:
   camelcase: 1
+  node/no-unsupported-features: 0

@@ -1,0 +1,2 @@
+rules:
+  node/no-unpublished-import: 0
