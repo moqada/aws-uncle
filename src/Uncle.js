@@ -84,7 +84,7 @@ http://img.tiqav.com/1Mr.jpg`;
       return !Object.keys(condition).some(key => {
         const con = condition[key];
         const val = getter(ins, key);
-        if (val === undefined) {
+        if (val === undefined || val === null) {
           return false;
         }
         return (Array.isArray(con) ? con : [con]).some(c => minimatch(val, c));
@@ -106,7 +106,7 @@ http://img.tiqav.com/1Mr.jpg`;
         } else if (key === 'cname') {
           return i.CNAME;
         }
-        return undefined;
+        return null;
       }).map(i => i.EnvironmentName);
       return {type: 'EB', names};
     });
@@ -144,7 +144,7 @@ http://img.tiqav.com/1Mr.jpg`;
         } else if (key === 'stateName') {
           return i.Status.State;
         }
-        return undefined;
+        return null;
       }).map(i => i.Name);
       return {type: 'EMR', names};
     });
@@ -162,7 +162,7 @@ http://img.tiqav.com/1Mr.jpg`;
         if (key === 'name') {
           return i.DBInstanceIdentifier;
         }
-        return undefined;
+        return null;
       }).map(i => i.DBInstanceIdentifier);
       return {type: 'RDS', names};
     });
