@@ -12,9 +12,9 @@ import {env} from './utils';
 export function hipchat(message) {
   return new Promise((resolve, reject) => {
     new Hipchatter(env('HIPCHAT_AUTH_TOKEN')).notify(env('HIPCHAT_ROOM_ID'), {
+      color: 'red',
       message,
       message_format: 'text',
-      color: 'red',
       notify: true,
       token: env('HIPCHAT_ROOM_TOKEN')
     }, err => {

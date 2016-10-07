@@ -62,7 +62,7 @@ export default class Uncle {
    * @param {Object[]} results List of check results
    * @return {string}
    */
-  createScoldingMessage(results) {
+  static createScoldingMessage(results) {
     const list = results.map(result => {
       return `- ${result.type}: ${result.names.join(', ')}`;
     });
@@ -79,7 +79,7 @@ http://img.tiqav.com/1Mr.jpg`;
    * @param {Function} getter function for getting instance value
    * @return {Object[]}
    */
-  exclude(instances, condition, getter) {
+  static exclude(instances, condition, getter) {
     return instances.filter(ins => {
       return !Object.keys(condition).some(key => {
         const con = condition[key];
@@ -108,7 +108,7 @@ http://img.tiqav.com/1Mr.jpg`;
         }
         return null;
       }).map(i => i.EnvironmentName);
-      return {type: 'EB', names};
+      return {names, type: 'EB'};
     });
   }
 
@@ -126,7 +126,7 @@ http://img.tiqav.com/1Mr.jpg`;
         }
         return i[key];
       }).map(i => utils.getTagValue(i.Tags, 'Name') || '');
-      return {type: 'EC2', names};
+      return {names, type: 'EC2'};
     });
   }
 
@@ -146,7 +146,7 @@ http://img.tiqav.com/1Mr.jpg`;
         }
         return null;
       }).map(i => i.Name);
-      return {type: 'EMR', names};
+      return {names, type: 'EMR'};
     });
   }
 
@@ -164,7 +164,7 @@ http://img.tiqav.com/1Mr.jpg`;
         }
         return null;
       }).map(i => i.DBInstanceIdentifier);
-      return {type: 'RDS', names};
+      return {names, type: 'RDS'};
     });
   }
 }
