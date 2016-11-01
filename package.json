@@ -19,7 +19,7 @@
     "del": "^2.0.2",
     "eslint": "^3.0.0",
     "eslint-config-moqada": "^17.0.0",
-    "eslint-plugin-node": "^2.0.0",
+    "eslint-plugin-node": "^3.0.1",
     "fs-extra": "^0.30.0",
     "mkdirp": "^0.5.1",
     "zip-local": "^0.3.0"
