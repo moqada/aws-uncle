@@ -20,7 +20,7 @@
     "eslint": "^3.0.0",
     "eslint-config-moqada": "^17.0.0",
     "eslint-plugin-node": "^3.0.3",
-    "fs-extra": "^0.30.0",
+    "fs-extra": "^1.0.0",
     "mkdirp": "^0.5.1",
     "zip-local": "^0.3.0"
   },
