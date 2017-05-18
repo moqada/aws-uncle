@@ -1,5 +1,7 @@
 # aws-uncle
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/moqada/aws-uncle.svg)](https://greenkeeper.io/)
+
 [![Build Status][travis-image]][travis-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![DevDependency Status][daviddm-dev-image]][daviddm-dev-url]
